@@ -79,16 +79,17 @@ var (
 	fs   = vfs.NameSpace{}
 
 	funcs = map[string]interface{}{
-		"example_md":   exampleMdFunc,
-		"example_link": exampleLinkFunc,
-		"comment_md":   commentMdFunc,
-		"base":         path.Base,
-		"md":           mdFunc,
-		"pre":          preFunc,
-		"kebab":        kebabFunc,
-		"bitscape":     bitscapeFunc, //Escape [] for bitbucket confusion
-		"trim_prefix":  strings.TrimPrefix,
-		"clean_link":   cleanLink,
+		"example_md":    exampleMdFunc,
+		"example_link":  exampleLinkFunc,
+		"show_examples": func() bool { return *showExamples },
+		"comment_md":    commentMdFunc,
+		"base":          path.Base,
+		"md":            mdFunc,
+		"pre":           preFunc,
+		"kebab":         kebabFunc,
+		"bitscape":      bitscapeFunc, //Escape [] for bitbucket confusion
+		"trim_prefix":   strings.TrimPrefix,
+		"clean_link":    cleanLink,
 	}
 )
 
