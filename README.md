@@ -1,1 +1,6 @@
-# I'm sorry I cannot offer support for this package any more. Feel free to fork it, you have the source, Luke.
+# godoc2md 
+
+A CLI to generate godoc as markdown documentation.
+Useful to document your private repos.
+
+This is a fork of github.com/davecheney/godoc2md
